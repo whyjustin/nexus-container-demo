@@ -12,7 +12,7 @@ pipeline {
     }
     stage ('Nexus Lifecycle') {
       steps {
-        nexusPolicyEvaluation iqApplication: 'nexus-container-demo', iqInstanceId: 'nexus-iq', iqStage: 'build'
+        nexusPolicyEvaluation iqApplication: 'nexus-lifecycle-demo', iqInstanceId: 'nexus-iq', iqStage: 'build'
       }
     }
   }
